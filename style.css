@@ -1,0 +1,121 @@
+@font-face {
+	font-family: "Inter";
+	src: url("./fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("./fonts/static/Inter-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("./fonts/static/Inter-SemiBold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("./fonts/static/Inter-Regular.ttf");
+	font-weight: 400;
+}
+
+:root {
+	/* Primary */
+	--green-color: hsl(75, 94%, 57%);
+
+	/*Neutral*/
+	--white-color: hsl(0, 0%, 100%);
+	--grey-color: hsl(0, 0%, 20%);
+	--dark-grey-color: hsl(0, 0%, 12%);
+	--off-black-color: hsl(0, 0%, 8%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	min-height: 100dvh;
+	font-size: 14px;
+	font-family: Inter;
+	margin: 0;
+	padding: 1.7rem;
+	background-color: var(--off-black-color);
+	color: var(--white-color);
+	text-align: center;
+}
+
+main {
+	display: inherit;
+	justify-content: center;
+	width: 100%;
+}
+
+.social-links-profile {
+	background-color: var(--dark-grey-color);
+	border-radius: 1rem;
+	padding: 2.5rem;
+	width: 115%;
+	max-width: 43ch;
+}
+
+.social-links-profile>* {
+	margin: 0;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 6rem;
+	margin-bottom: 1.5rem;
+}
+
+.name {
+	font-weight: 600;
+	font-size: 1.7rem;
+	margin-bottom: 0.6rem;
+}
+
+.location {
+	color: var(--green-color);
+	font-weight: 600;
+	margin-bottom: 1.8rem;
+}
+
+.about {
+	margin: 1.6rem 0 1.6rem 0;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.1rem;
+	font-weight: 700;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-links a {
+	display: block;
+	font-style: normal;
+	text-decoration: none;
+	color: var(--white-color);
+	padding: 1rem;
+	background-color: var(--grey-color);
+	border-radius: 0.6rem;
+}
+
+.social-links li:hover a {
+	background-color: var(--green-color);
+	color: var(--grey-color);
+}
+
+@media only screen and (max-width: 465px) {
+	.social-links-profile {
+		padding: 1.6em;
+	}
+}
