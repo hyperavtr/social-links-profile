@@ -43,7 +43,7 @@ body {
 	font-size: 14px;
 	font-family: Inter;
 	margin: 0;
-	padding: 1.7rem;
+	padding: 1.4rem;
 	background-color: var(--off-black-color);
 	color: var(--white-color);
 	text-align: center;
@@ -69,7 +69,7 @@ main {
 
 .avatar {
 	border-radius: 50%;
-	width: 5.7rem;
+	width: 5.8rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -117,5 +117,13 @@ main {
 @media only screen and (max-width: 465px) {
 	.social-links-profile {
 		padding: 1.6em;
+	}
+
+	.avatar {
+		width: 6.5em;
+	}
+
+	.location {
+		font-size: 1.11em;
 	}
 }
